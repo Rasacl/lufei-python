@@ -16,15 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.shortcuts import HttpResponse
-
-
-def info(request):
-    print('请求来了')
-    return HttpResponse('hello world')
-
+from django.urls import include, path
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('api/inedx/', info),
+    path("api/", include("web.urls")),
 ]

@@ -37,7 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'web'
 ]
+
+APPEND_SLASH = True  # 自动为不带斜杠的 URL 添加斜杠 启用后，访问 http://127.0.0.1:8000/api/index 也会自动重定向到
+# http://127.0.0.1:8000/api/index/
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

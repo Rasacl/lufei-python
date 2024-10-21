@@ -15,3 +15,9 @@
 ```python
 #  python manage.py runserver
 ```
+
+3 app 创建--命令行
+
+```python
+#  python manage.py startapp app名
+`
